@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Technology {
   id: string;
   name: string;
@@ -14,9 +12,14 @@ interface Technology {
 interface TechnologyCardProps {
   technology: Technology;
   isSelected: boolean;
+  onAdd: (techId: string) => void;
 }
 
-const TechnologyCard = ({ technology, isSelected }: TechnologyCardProps) => {
+const TechnologyCard = ({
+  technology,
+  isSelected,
+  onAdd,
+}: TechnologyCardProps) => {
   return (
     <article
       className={`min-h-[260px] flex flex-col rounded-xl border bg-[#f7f7f7] p-4 ${isSelected ? "border-[#050505]" : "border-[#b1afaf]"}`}
@@ -50,7 +53,9 @@ const TechnologyCard = ({ technology, isSelected }: TechnologyCardProps) => {
       </div>
 
       <button
+        onClick={() => onAdd(technology.id)}
         className={`w-full rounded-xl px-4 py-3 text-sm font-semibold ${isSelected ? "bg-[#e5e7eb] text-[#111827]" : "bg-[#171c2f] text-[white]"}`}
+        disabled={isSelected}
       >
         {isSelected ? "Added to Stack" : "Add to Stack"}
       </button>
