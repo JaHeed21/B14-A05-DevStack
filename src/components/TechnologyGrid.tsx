@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import TechnologyCard from "./TechnologyCard";
 
 interface Technology {
@@ -18,6 +18,7 @@ interface TechnologyGridProps {
 
 const TechnologyGrid = ({ technologies }: TechnologyGridProps) => {
   const technologyList = use(technologies);
+  const [SelectedIds, setSelectedIds] = useState<string[]>([]);
   return (
     <>
       <section className="mx-auto w-full px-12 pb-12 pt-8 sm:px-8 lg:px-14">
@@ -34,9 +35,16 @@ const TechnologyGrid = ({ technologies }: TechnologyGridProps) => {
         </div>
         <div className="grid gap-8 xl:grid-cols-[1fr_260px]">
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {technologyList.map((technology) => (
-              <TechnologyCard key={technology.id} technology={technology} />
-            ))}
+            {technologyList.map((technology) => {
+              const isSelected = SelectedIds.includes(technology.id);
+              return (
+                <TechnologyCard
+                  key={technology.id}
+                  technology={technology}
+                  isSelected={isSelected}
+                />
+              );
+            })}
           </div>
         </div>
       </section>
