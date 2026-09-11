@@ -10,7 +10,7 @@ const Banner = () => {
             Development Stack
           </span>
         </h1>
-        <p className="max-w-[560px] mt-7 text-[1.2rem] text-[#6b7280]">
+        <p className="max-w-140 mt-7 text-[1.2rem] text-[#6b7280]">
           Explore Frontend, Backend, database, and tooling options, compare them
           side by sidem and put together the stack that fits your next project.
         </p>
@@ -27,7 +27,7 @@ const Banner = () => {
         <img
           src={bannerStack}
           alt="Banner Stack"
-          className="w-full h-[450px] w-[450px] object-cover"
+          className="w-full h-[450px] object-cover"
         />
       </section>
     </main>
