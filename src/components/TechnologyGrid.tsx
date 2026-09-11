@@ -40,17 +40,19 @@ const TechnologyGrid = ({ technologies }: TechnologyGridProps) => {
   const removeAll = () => setSelectedIds([]);
   return (
     <>
-      <section className="mx-auto w-full px-12 pb-12 pt-8 sm:px-8 lg:px-14">
-        <div>
-          <h2 className="text-[2.2rem] font-black sm:text-[3rem]">
-            Explore the{" "}
-            <span className="bg-linear-to-r from-[#d72c8d] to-[#1f3bd9] bg-clip-text text-transparent">
-              Technologies
-            </span>
-          </h2>
-          <p className="mt-2 text-[1.5rem]">
-            Pick one technology er category to build your idea stack.
-          </p>
+      <section className="mx-auto w-full px-5 pb-12 pt-8 sm:px-8 lg:px-14">
+        <div className="mb-10 flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-[2.2rem] font-black sm:text-[3rem]">
+              Explore the{" "}
+              <span className="bg-linear-to-r from-[#d72c8d] to-[#1f3bd9] bg-clip-text text-transparent">
+                Technologies
+              </span>
+            </h2>
+            <p className="mt-2 text-[1.5rem]">
+              Pick one technology er category to build your idea stack.
+            </p>
+          </div>
         </div>
         {/* xl:grid-cols-[minmax(0,1fr)_270px] ------> same as what used bellow*/}
         <div className="grid gap-8 xl:grid-cols-[1fr_270px]">

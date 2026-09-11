@@ -13,7 +13,7 @@ const YourStack = ({
 }: YourStackProps) => {
   const isEmpty = selectedStack.length === 0;
   return (
-    <section className="h-fit rounded-[22px] border boorder-[#e5e7eb] bg-[#f7f7f7] p-4">
+    <section className="h-fit rounded-[22px] border border-[#e5e7eb] bg-[#f7f7f7] p-4">
       <h3 className="text-[1.3rem] font-bold text-[#0f172a] ">Your Stack</h3>
       <p className="mt-1 text-[0.75rem] text-[#6b7280]">
         {selectedStack.length === 0
@@ -23,7 +23,7 @@ const YourStack = ({
 
       <div className="mt-5 space-y-4">
         {isEmpty ? (
-          <p className="text-center text-sm border border-dotted px-6 py-4 rounded-xl">
+          <p className="text-center text-sm border border-dashed px-6 py-4 rounded-xl ">
             {" "}
             Your stack is empty{" "}
           </p>
