@@ -1,9 +1,13 @@
+import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <main className="max-w-400 mx-auto">
+        <Navbar />
+        <Banner />
+      </main>
     </>
   );
 }
