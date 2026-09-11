@@ -40,7 +40,7 @@ const TechnologyGrid = ({ technologies }: TechnologyGridProps) => {
   const removeAll = () => setSelectedIds([]);
   return (
     <>
-      <section className="mx-auto w-full px-5 pb-12 pt-8 sm:px-8 lg:px-14">
+      <section className="mx-auto max-w-400 w-full px-5 pb-12 pt-8 sm:px-8 lg:px-14 ">
         <div className="mb-10 flex items-end justify-between gap-4">
           <div>
             <h2 className="text-[2.2rem] font-black sm:text-[3rem]">

@@ -12,17 +12,16 @@ const technologyPromise = getTechnologies();
 function App() {
   return (
     <>
-      <main className="max-w-400 mx-auto">
-        <Navbar />
-        <Banner />
-        <Suspense
-          fallback={
-            <div className="text-center text-2xl font-bold">Loading...</div>
-          }
-        >
-          <TechnologyGrid technologies={technologyPromise} />
-        </Suspense>
-      </main>
+      <Navbar />
+      <div className="max-w-[1920px] border-b border-[#ececec]"></div>
+      <Banner />
+      <Suspense
+        fallback={
+          <div className="text-center text-2xl font-bold">Loading...</div>
+        }
+      >
+        <TechnologyGrid technologies={technologyPromise} />
+      </Suspense>
     </>
   );
 }

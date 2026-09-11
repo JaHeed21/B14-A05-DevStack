@@ -2,11 +2,11 @@ import bannerStack from "../assets/banner-stack.png";
 
 const Banner = () => {
   return (
-    <main className="flex justify-between mx-auto w-full flex-col lg:flex-row px-12 py-12 ">
+    <main className="flex justify-between mx-auto w-full flex-col lg:flex-row px-12 py-12 max-w-400 ">
       <section className="w-full mx-auto mt-16 lg:w-[50%] ">
         <h1 className="text-[4rem] font-black leading-[1.2]">
           Build Your Idea{" "}
-          <span className="block bg-linear-to-r from-[#ff7a18] via-[#d72c8d] to-[#7d5cff] bg-clip-text text-transparent">
+          <span className="block bg-linear-to-r from-[#ff7a18] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
             Development Stack
           </span>
         </h1>

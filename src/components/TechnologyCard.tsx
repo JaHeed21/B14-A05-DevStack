@@ -26,9 +26,12 @@ const badgeStyles: Record<string, string> = {
   Robust: "bg-[#f1f5ff] text-[#2453c7]",
   Modern: "bg-[#e6fdf9] text-[#0f766e]",
   Containers: "bg-[#eef5ff] text-[#3b82f6]",
+  Orchestration: "bg-[#f0f5ff] text-[#326ce5]",
   "Top SQL": "bg-[#eef7ff] text-[#2a7de1]",
+  "NoSQL Standard": "bg-[#f2faf3] text-[#13aa52]",
+  "Flexible API": "bg-[#fdf2f8] text-[#e10098]",
+  "Cloud Leader": "bg-[#fff8f0] text-[#ff9900]",
 };
-
 const TechnologyCard = ({
   technology,
   isSelected,

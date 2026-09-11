@@ -11,7 +11,7 @@ const navitems = [
 const Navbar = () => {
   return (
     <>
-      <nav className="flex justify-between items-center w-full mx-auto px-12 py-3 ">
+      <nav className="flex justify-between items-center w-full mx-auto px-12 py-3 max-w-400 mx-auto ">
         <div className="h-[30px] w-auto">
           <img src={logoText} alt="Website Logo" />
         </div>
