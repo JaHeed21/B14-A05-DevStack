@@ -32,8 +32,8 @@ const TechnologyGrid = ({ technologies }: TechnologyGridProps) => {
             Pick one technology er category to build your idea stack.
           </p>
         </div>
-        <div>
-          <div>
+        <div className="grid gap-8 xl:grid-cols-[1fr_260px]">
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {technologyList.map((technology) => (
               <TechnologyCard key={technology.id} technology={technology} />
             ))}

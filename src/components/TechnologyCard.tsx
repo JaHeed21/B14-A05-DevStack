@@ -13,13 +13,17 @@ interface Technology {
 
 interface TechnologyCardProps {
   technology: Technology;
+  isSelected: boolean;
 }
 
 const TechnologyCard = ({ technology }: TechnologyCardProps) => {
+  const isSelected: boolean = false;
   return (
-    <div>
+    <article
+      className={`min-h-[260px] flex flex-col rounded-xl border bg-[#f7f7f7] p-4 ${isSelected ? "border-[#050505]" : "border-[#b1afaf]"}`}
+    >
       <div className="flex items-center gap-3">
-        <div key={technology.id} className="h-10 w-10 ">
+        <div className="h-10 w-10 ">
           <img src={technology.icon} alt={technology.name} />
         </div>
         <span className="rounded-full text-[.8rem]">{technology.badge}</span>
@@ -41,7 +45,12 @@ const TechnologyCard = ({ technology }: TechnologyCardProps) => {
           </span>
         </div>
       </div>
-    </div>
+      <button
+        className={`w-full rounded-xl px-4 py-3 text-sm font-semibold ${isSelected ? "bg-[#e5e7eb] text-[#111827]" : "bg-[#171c2f] text-[white]"}`}
+      >
+        {isSelected ? "Added to Stack" : "Add to Stack"}
+      </button>
+    </article>
   );
 };
 
