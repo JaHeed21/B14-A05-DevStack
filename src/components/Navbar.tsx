@@ -16,9 +16,13 @@ const Navbar = () => {
         <div className="h-[30px] w-auto">
           <img src={logoText} alt="Website Logo" />
         </div>
-        <div className="flex gap-4 font-inter text-xl">
+        <div className="flex gap-6 font-inter text-xl">
           {navitems.map((item, index) => (
-            <a key={index} href={item.link}>
+            <a
+              key={index}
+              href={item.link}
+              className="hover:text-[#d72c8d] font-jakarta"
+            >
               {item.name}
             </a>
           ))}

@@ -3,7 +3,7 @@ import bannerStack from "../assets/banner-stack.png";
 const Banner = () => {
   return (
     <main className="flex justify-between mx-auto w-full flex-col lg:flex-row px-12 py-12 ">
-      <section className="w-full mx-auto px-12 py-12">
+      <section className="w-full mx-auto mt-16 lg:w-[50%] ">
         <h1 className="text-[4rem] font-black leading-[1.2]">
           Build Your Idea{" "}
           <span className="block bg-linear-to-r from-[#ff7a18] via-[#d72c8d] to-[#7d5cff] bg-clip-text text-transparent">
@@ -23,8 +23,12 @@ const Banner = () => {
           </button>
         </div>
       </section>
-      <section>
-        <img src={bannerStack} alt="Banner Stack" />
+      <section className="flex w-full lg:w-[50%] md:w-[48%] justify-center items-center">
+        <img
+          src={bannerStack}
+          alt="Banner Stack"
+          className="w-full h-[450px] w-[450px] object-cover"
+        />
       </section>
     </main>
   );
