@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import TechnologyGrid from "./components/TechnologyGrid";
+import Footer from "./components/Footer";
 import { Suspense } from "react";
 
 const getTechnologies = async () => {
@@ -22,6 +23,7 @@ function App() {
       >
         <TechnologyGrid technologies={technologyPromise} />
       </Suspense>
+      <Footer />
     </>
   );
 }
