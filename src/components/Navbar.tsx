@@ -20,13 +20,13 @@ const Navbar = () => {
             <a
               key={index}
               href={item.link}
-              className="hover:text-[#d72c8d] font-jakarta"
+              className="hover:text-[#d72c8d] font-jakarta text-[#475569]"
             >
               {item.name}
             </a>
           ))}
         </div>
-        <div className="flex gap-4 text-xl">
+        <div className="flex gap-4 text-xl font-jakarta">
           <button>Sign in</button>
           <button className="rounded-full bg-[#d72c8d] px-4 py-2 font-semibold text-white ">
             Sign up

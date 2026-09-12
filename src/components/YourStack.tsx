@@ -21,7 +21,7 @@ const YourStack = ({
           : `${selectedStack.length} ${selectedStack.length <= 1 ? " Technology" : " Technologies"} selected.`}
       </p>
 
-      <div className="mt-5 space-y-4">
+      <div className="mt-5 space-y-4 font-jakarta">
         {isEmpty ? (
           <p className="text-center text-sm border border-dashed px-6 py-4 rounded-xl ">
             {" "}

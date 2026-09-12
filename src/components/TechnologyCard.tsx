@@ -57,7 +57,7 @@ const TechnologyCard = ({
       <h3 className="text-[1.05rem] px-2 font-bold text-[#171f2c] sm:text-[1.2rem]">
         {technology.name}
       </h3>
-      <p className="px-2 text-[0.9rem] leading-6 text-[#4b5563]">
+      <p className="px-2 text-[0.9rem] leading-6 text-[#64748B]">
         {technology.description}
       </p>
 
@@ -79,7 +79,7 @@ const TechnologyCard = ({
 
       <button
         onClick={() => onAdd(technology.id)}
-        className={`w-full rounded-xl px-4 py-3 text-sm font-semibold ${isSelected ? "bg-[#e5e7eb] text-[#111827]" : "bg-[#171c2f] text-[white]"}`}
+        className={`w-full rounded-xl px-4 py-3 text-sm font-medium font-jakarta ${isSelected ? "bg-[#e5e7eb] text-[#111827]" : "bg-[#171c2f] text-[white]"}`}
         disabled={isSelected}
       >
         {isSelected ? "Added to Stack" : "Add to Stack"}

@@ -43,13 +43,13 @@ const TechnologyGrid = ({ technologies }: TechnologyGridProps) => {
       <section className="mx-auto max-w-400 w-full px-5 pb-12 pt-8 sm:px-8 lg:px-14 ">
         <div className="mb-10 flex items-end justify-between gap-4">
           <div>
-            <h2 className="text-[2.2rem] font-black sm:text-[3rem]">
+            <h2 className="text-[2.2rem] font-black sm:text-[3rem] font-inter">
               Explore the{" "}
               <span className="bg-linear-to-r from-[#d72c8d] to-[#1f3bd9] bg-clip-text text-transparent">
                 Technologies
               </span>
             </h2>
-            <p className="mt-2 text-[1.5rem]">
+            <p className="mt-2 text-[1.5rem] font-jakarta text-[#64748B]">
               Pick one technology er category to build your idea stack.
             </p>
           </div>

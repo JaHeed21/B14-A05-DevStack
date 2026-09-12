@@ -4,13 +4,13 @@ const Banner = () => {
   return (
     <main className="flex justify-between mx-auto w-full flex-col lg:flex-row px-12 py-12 max-w-400 ">
       <section className="w-full mx-auto mt-16 lg:w-[50%] ">
-        <h1 className="text-[4rem] font-black leading-[1.2]">
+        <h1 className="text-[4rem] font-black leading-[1.2] font-inter">
           Build Your Idea{" "}
           <span className="block bg-linear-to-r from-[#ff7a18] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
             Development Stack
           </span>
         </h1>
-        <p className="max-w-140 mt-7 text-[1.2rem] text-[#6b7280]">
+        <p className="max-w-140 mt-7 text-[1.2rem] text-[#6b7280] font-jakarta">
           Explore Frontend, Backend, database, and tooling options, compare them
           side by sidem and put together the stack that fits your next project.
         </p>
