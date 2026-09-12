@@ -12,7 +12,7 @@ const navitems = [
 const Navbar = () => {
   return (
     <>
-      <nav className="flex justify-between items-center w-full mx-auto px-12 py-3 max-w-400 mx-auto ">
+      <nav className=" sticky top-0 z-1 bg-white flex justify-between items-center w-full mx-auto px-12 py-3 max-w-400 mx-auto ">
         <div className="flex flex-1 items-center justify-start md:flex-none ">
           <button className="md:hidden flex items-center justify-center">
             <img src={hamburgerIcon} alt="menu Icon" className="h-6 w-6 " />
