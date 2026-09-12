@@ -1,6 +1,7 @@
 import { use, useState } from "react";
 import TechnologyCard from "./TechnologyCard";
 import YourStack from "./YourStack";
+import { toast } from "react-toastify";
 
 export interface Technology {
   id: string;
@@ -29,6 +30,10 @@ const TechnologyGrid = ({ technologies }: TechnologyGridProps) => {
     if (SelectedIds.includes(techId)) return;
 
     setSelectedIds((previousIds: string[]) => [...previousIds, techId]);
+    const selectedTech = technologyList.find((tech) => tech.id === techId);
+    if (selectedTech) {
+      toast.success(`${selectedTech.name} added to your stack.`);
+    }
   };
 
   const removeFromStack = (techId: string) => {
